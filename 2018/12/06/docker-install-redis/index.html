@@ -406,14 +406,14 @@
 <li>通过docker search 查找DockerHub上的redis镜像<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker search redis</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<p><img src="public/img/redis1.png" alt="redis1"><br>可以看到第一个就是我们想要的镜像</p>
+<p><img src="../../../../img/redis1.png" alt="redis1"><br>可以看到第一个就是我们想要的镜像</p>
 <ol start="2">
 <li>然后我们使用docker pull拉取此镜像</li>
 </ol>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull redis</span><br></pre></td></tr></table></figure>
 <p>通过docker pull redis 可以拉去Docker Hub上redis的最新版本,你也可以拉取指定版本的redis</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull redis:3.2</span><br></pre></td></tr></table></figure>
-<p><img src="public/img/redis-pull.png" alt="redis-pull"></p>
+<p><img src="../../../../img/redis-pull.png" alt="redis-pull"></p>
 <ol start="3">
 <li>成功拉取镜像后，我们可以使用docker run 运行容器</li>
 </ol>
@@ -429,12 +429,12 @@
 <ol start="4">
 <li>容器运行后，我们通过docker ps查看容器运行状况</li>
 </ol>
-<p><img src="public/img/dockerps.png" alt="dockerps"></p>
+<p><img src="../../../../img/dockerps.png" alt="dockerps"></p>
 <ol start="5">
 <li>连接redis容器<br>使用redis镜像执行redis-cli命令连接到刚启动的容器,主机IP为127.0.0.1</li>
 </ol>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it 9a69c63b928c redis-cli</span><br></pre></td></tr></table></figure>
-<p><img src="public/img/redis-run.png" alt="redis-run"></p>
+<p><img src="../../../../img/redis-run.png" alt="redis-run"></p>
 <p>就这样通过docker成功安装redis并运行</p>
 
       
