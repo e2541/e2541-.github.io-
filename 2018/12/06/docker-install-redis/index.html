@@ -108,24 +108,29 @@
 
 
 
-  <meta name="description" content="这是一个测试">
+  <meta name="description" content="今天来讲一讲通过docker来安装redis 通过docker search 查找DockerHub上的redis镜像1docker search redis   可以看到第一个就是我们想要的镜像  然后我们使用docker pull拉取此镜像  1docker pull redis 通过docker pull redis 可以拉去Docker Hub上redis的最新版本,你也可以拉取指定版本的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test">
-<meta property="og:url" content="https://e2541.github.io/e2541-.github.io-/2018/12/02/test/index.html">
+<meta property="og:title" content="docker-install-redis">
+<meta property="og:url" content="https://e2541.github.io/e2541-.github.io-/2018/12/06/docker-install-redis/index.html">
 <meta property="og:site_name" content="my blog">
-<meta property="og:description" content="这是一个测试">
+<meta property="og:description" content="今天来讲一讲通过docker来安装redis 通过docker search 查找DockerHub上的redis镜像1docker search redis   可以看到第一个就是我们想要的镜像  然后我们使用docker pull拉取此镜像  1docker pull redis 通过docker pull redis 可以拉去Docker Hub上redis的最新版本,你也可以拉取指定版本的">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-02T03:07:09.661Z">
+<meta property="og:image" content="https://e2541.github.io/e2541-.github.io-/2018/12/06/img/redis1.png">
+<meta property="og:image" content="https://e2541.github.io/e2541-.github.io-/2018/12/06/img/redis-pull.png">
+<meta property="og:image" content="https://e2541.github.io/e2541-.github.io-/2018/12/06/img/dockerps.png">
+<meta property="og:image" content="https://e2541.github.io/e2541-.github.io-/2018/12/06/img/redis-run.png">
+<meta property="og:updated_time" content="2018-12-06T15:15:30.029Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="test">
-<meta name="twitter:description" content="这是一个测试">
+<meta name="twitter:title" content="docker-install-redis">
+<meta name="twitter:description" content="今天来讲一讲通过docker来安装redis 通过docker search 查找DockerHub上的redis镜像1docker search redis   可以看到第一个就是我们想要的镜像  然后我们使用docker pull拉取此镜像  1docker pull redis 通过docker pull redis 可以拉去Docker Hub上redis的最新版本,你也可以拉取指定版本的">
+<meta name="twitter:image" content="https://e2541.github.io/e2541-.github.io-/2018/12/06/img/redis1.png">
 
 
 
 
 
 
-  <link rel="canonical" href="https://e2541.github.io/e2541-.github.io-/2018/12/02/test/">
+  <link rel="canonical" href="https://e2541.github.io/e2541-.github.io-/2018/12/06/docker-install-redis/">
 
 
 
@@ -135,7 +140,7 @@
   };
 </script>
 
-  <title>test | my blog</title>
+  <title>docker-install-redis | my blog</title>
   
 
 
@@ -317,7 +322,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://e2541.github.io/e2541-.github.io-/e2541-.github.io-/2018/12/02/test/">
+    <link itemprop="mainEntityOfPage" href="https://e2541.github.io/e2541-.github.io-/e2541-.github.io-/2018/12/06/docker-install-redis/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="jming">
@@ -334,7 +339,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">test
+          <h1 class="post-title" itemprop="name headline">docker-install-redis
               
             
           </h1>
@@ -359,7 +364,7 @@
                 
               
 
-              <time title="Post created: 2018-12-02 11:06:53 / Updated at: 11:07:09" itemprop="dateCreated datePublished" datetime="2018-12-02T11:06:53+08:00">2018-12-02</time>
+              <time title="Post created: 2018-12-06 22:48:35 / Updated at: 23:15:30" itemprop="dateCreated datePublished" datetime="2018-12-06T22:48:35+08:00">2018-12-06</time>
             
 
             
@@ -397,7 +402,41 @@
       
 
       
-        <h1 id="这是一个测试"><a href="#这是一个测试" class="headerlink" title="这是一个测试"></a>这是一个测试</h1>
+        <h2 id="今天来讲一讲通过docker来安装redis"><a href="#今天来讲一讲通过docker来安装redis" class="headerlink" title="今天来讲一讲通过docker来安装redis"></a>今天来讲一讲通过docker来安装redis</h2><ol>
+<li>通过docker search 查找DockerHub上的redis镜像<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker search redis</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p><img src="../img/redis1.png" alt="redis1"><br>可以看到第一个就是我们想要的镜像</p>
+<ol start="2">
+<li>然后我们使用docker pull拉取此镜像</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull redis</span><br></pre></td></tr></table></figure>
+<p>通过docker pull redis 可以拉去Docker Hub上redis的最新版本,你也可以拉取指定版本的redis</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker pull redis:3.2</span><br></pre></td></tr></table></figure>
+<p><img src="../img/redis-pull.png" alt="redis-pull"></p>
+<ol start="3">
+<li>成功拉取镜像后，我们可以使用docker run 运行容器</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -p 6379:6379 -v /data:/data -d redis redis-server --appendonly yes</span><br></pre></td></tr></table></figure>
+<p>这行命令说明:</p>
+<blockquote>
+<ul>
+<li>p 6379:6379 : 将容器的6379端口映射到主机的6379端口</li>
+<li>-v /data:/data : 将主机中当前目录下的data挂载到容器的/data</li>
+<li>redis-server –appendonly yes : 在容器执行redis-server启动命令，并打开redis持久化配置</li>
+</ul>
+</blockquote>
+<ol start="4">
+<li>容器运行后，我们通过docker ps查看容器运行状况</li>
+</ol>
+<p><img src="../img/dockerps.png" alt="dockerps"></p>
+<ol start="5">
+<li>连接redis容器<br>使用redis镜像执行redis-cli命令连接到刚启动的容器,主机IP为127.0.0.1</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker exec -it 9a69c63b928c redis-cli</span><br></pre></td></tr></table></figure>
+<p><img src="../img/redis-run.png" alt="redis-run"></p>
+<p>就这样通过docker成功安装redis并运行</p>
+
       
     </div>
 
@@ -427,8 +466,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/e2541-.github.io-/2018/12/01/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/e2541-.github.io-/2018/12/02/test/" rel="next" title="test">
+                <i class="fa fa-chevron-left"></i> test
               </a>
             
           </div>
@@ -436,10 +475,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/e2541-.github.io-/2018/12/06/docker-install-redis/" rel="prev" title="docker-install-redis">
-                docker-install-redis <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -548,7 +583,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#这是一个测试"><span class="nav-number">1.</span> <span class="nav-text">这是一个测试</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#今天来讲一讲通过docker来安装redis"><span class="nav-number">1.</span> <span class="nav-text">今天来讲一讲通过docker来安装redis</span></a></li></ol></div>
             
 
           </div>

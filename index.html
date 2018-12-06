@@ -11,15 +11,17 @@
 
 
 
-  
+
 
 
 <html class="theme-next pisces use-motion" lang="zh-Hans">
-<head><meta name="generator" content="Hexo 3.8.0">
+
+<head>
+  <meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+  <meta name="theme-color" content="#222">
 
 
 
@@ -32,8 +34,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -56,9 +58,9 @@
 
 
 
-<link href="/e2541-.github.io-/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+  <link href="/e2541-.github.io-/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="/e2541-.github.io-/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
+  <link href="/e2541-.github.io-/css/main.css?v=6.6.0" rel="stylesheet" type="text/css">
 
 
   <link rel="apple-touch-icon" sizes="180x180" href="/e2541-.github.io-/images/apple-touch-icon-next.png?v=6.6.0">
@@ -80,44 +82,67 @@
 
 
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/e2541-.github.io-/',
-    scheme: 'Pisces',
-    version: '6.6.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
+  <script type="text/javascript" id="hexo.configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {
+      root: '/e2541-.github.io-/',
+      scheme: 'Pisces',
+      version: '6.6.0',
+      sidebar: {
+        "position": "left",
+        "display": "post",
+        "offset": 12,
+        "b2t": false,
+        "scrollpercent": false,
+        "onmobile": false
+      },
+      fancybox: false,
+      fastclick: false,
+      lazyload: false,
+      tabs: true,
+      motion: {
+        "enable": true,
+        "async": false,
+        "transition": {
+          "post_block": "fadeIn",
+          "post_header": "slideDownIn",
+          "post_body": "slideDownIn",
+          "coll_header": "slideLeftIn",
+          "sidebar": "slideUpIn"
+        }
+      },
+      algolia: {
+        applicationID: '',
+        apiKey: '',
+        indexName: '',
+        hits: {
+          "per_page": 10
+        },
+        labels: {
+          "input_placeholder": "Search for Posts",
+          "hits_empty": "We didn't find any results for the search: ${query}",
+          "hits_stats": "${hits} results found in ${time} ms"
+        }
+      }
+    };
+  </script>
 
 
-  
+
 
 
 
 
   <meta name="description" content="我的博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="my blog">
-<meta property="og:url" content="https://e2541.github.io/e2541-.github.io-/index.html">
-<meta property="og:site_name" content="my blog">
-<meta property="og:description" content="我的博客">
-<meta property="og:locale" content="zh-Hans">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="my blog">
-<meta name="twitter:description" content="我的博客">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="my blog">
+  <meta property="og:url" content="https://e2541.github.io/e2541-.github.io-/index.html">
+  <meta property="og:site_name" content="my blog">
+  <meta property="og:description" content="我的博客">
+  <meta property="og:locale" content="zh-Hans">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="my blog">
+  <meta name="twitter:description" content="我的博客">
 
 
 
@@ -128,14 +153,14 @@
 
 
 
-<script type="text/javascript" id="page.configurations">
-  CONFIG.page = {
-    sidebar: "",
-  };
-</script>
+  <script type="text/javascript" id="page.configurations">
+    CONFIG.page = {
+      sidebar: "",
+    };
+  </script>
 
   <title>my blog</title>
-  
+
 
 
 
@@ -148,559 +173,857 @@
 
 
   <noscript>
-  <style type="text/css">
-    .use-motion .motion-element,
-    .use-motion .brand,
-    .use-motion .menu-item,
-    .sidebar-inner,
-    .use-motion .post-block,
-    .use-motion .pagination,
-    .use-motion .comments,
-    .use-motion .post-header,
-    .use-motion .post-body,
-    .use-motion .collection-title { opacity: initial; }
+    <style type="text/css">
+      .use-motion .motion-element,
+      .use-motion .brand,
+      .use-motion .menu-item,
+      .sidebar-inner,
+      .use-motion .post-block,
+      .use-motion .pagination,
+      .use-motion .comments,
+      .use-motion .post-header,
+      .use-motion .post-body,
+      .use-motion .collection-title {
+        opacity: initial;
+      }
 
-    .use-motion .logo,
-    .use-motion .site-title,
-    .use-motion .site-subtitle {
-      opacity: initial;
-      top: initial;
-    }
+      .use-motion .logo,
+      .use-motion .site-title,
+      .use-motion .site-subtitle {
+        opacity: initial;
+        top: initial;
+      }
 
-    .use-motion {
-      .logo-line-before i { left: initial; }
-      .logo-line-after i { right: initial; }
-    }
-  </style>
-</noscript>
+      .use-motion {
+        .logo-line-before i {
+          left: initial;
+        }
+
+        .logo-line-after i {
+          right: initial;
+        }
+      }
+    </style>
+  </noscript>
 
 </head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
-  
-  
-    
-  
+
+
+
+
 
   <div class="container sidebar-position-left 
   page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/e2541-.github.io-/" class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">my blog</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-    
-  </div>
-
-  <div class="site-nav-toggle">
-    <button aria-label="Toggle navigation bar">
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
-</div>
+      <div class="header-inner">
+        <div class="site-brand-wrapper">
+          <div class="site-meta ">
 
 
+            <div class="custom-logo-site-title">
+              <a href="/e2541-.github.io-/" class="brand" rel="start">
+                <span class="logo-line-before"><i></i></span>
+                <span class="site-title">my blog</span>
+                <span class="logo-line-after"><i></i></span>
+              </a>
+            </div>
 
-<nav class="site-nav">
-  
-    <ul id="menu" class="menu">
-      
-        
-        
-        
-          
-          <li class="menu-item menu-item-home">
+          </div>
 
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/e2541-.github.io-/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Startseite</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-archives">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/e2541-.github.io-/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archiv</a>
-
-  </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-commonweal">
-
-    
-    
-    
-      
-    
-
-    
-
-    <a href="/e2541-.github.io-/404.html" rel="section"><i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>Commonweal 404</a>
-
-  </li>
-
-      
-      
-    </ul>
-  
-
-  
-
-  
-</nav>
+          <div class="site-nav-toggle">
+            <button aria-label="Toggle navigation bar">
+              <span class="btn-bar"></span>
+              <span class="btn-bar"></span>
+              <span class="btn-bar"></span>
+            </button>
+          </div>
+        </div>
 
 
 
-  
+        <nav class="site-nav">
+
+          <ul id="menu" class="menu">
 
 
 
-</div>
+
+
+            <li class="menu-item menu-item-home">
+
+
+
+
+
+
+
+
+
+              <a href="/e2541-.github.io-/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Startseite</a>
+
+            </li>
+
+
+
+
+            <li class="menu-item menu-item-archives">
+
+
+
+
+
+
+
+
+
+              <a href="/e2541-.github.io-/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i>
+                <br>Archiv</a>
+
+            </li>
+
+
+
+
+            <li class="menu-item menu-item-commonweal">
+
+
+
+
+
+
+
+
+
+              <a href="/e2541-.github.io-/404.html" rel="section"><i class="menu-item-icon fa fa-fw fa-heartbeat"></i>
+                <br>Commonweal 404</a>
+
+            </li>
+
+
+
+          </ul>
+
+
+
+
+
+        </nav>
+
+
+
+
+
+
+
+      </div>
     </header>
 
-    
+
 
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          
-            
 
-          
+
+
+
           <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://e2541.github.io/e2541-.github.io-/2018/12/02/test/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="jming">
-      <meta itemprop="description" content="我的博客">
-      <meta itemprop="image" content="/e2541-.github.io-/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="my blog">
-    </span>
 
-    
-      <header class="post-header">
+            <section id="posts" class="posts-expand">
 
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/e2541-.github.io-/2018/12/02/test/" class="post-title-link" itemprop="https://e2541.github.io/e2541-.github.io-/index.html">test</a>
-              
-            
-          </h1>
-        
 
-        <div class="post-meta">
-          <span class="post-time">
 
-            
-            
-            
 
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
 
-              
-                
-              
 
-              <time title="Post created: 2018-12-02 11:06:53 / Updated at: 11:07:09" itemprop="dateCreated datePublished" datetime="2018-12-02T11:06:53+08:00">2018-12-02</time>
-            
-
-            
-              
 
-              
-            
-          </span>
 
-          
 
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="这是一个测试"><a href="#这是一个测试" class="headerlink" title="这是一个测试"></a>这是一个测试</h1>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-       
-    
-    
-
-    
 
-    <footer class="post-footer">
-      
 
-      
+              <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
 
-      
 
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://e2541.github.io/e2541-.github.io-/2018/12/01/hello-world/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="jming">
-      <meta itemprop="description" content="我的博客">
-      <meta itemprop="image" content="/e2541-.github.io-/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="my blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/e2541-.github.io-/2018/12/01/hello-world/" class="post-title-link" itemprop="https://e2541.github.io/e2541-.github.io-/index.html">Hello World</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
 
-              
-                
-              
+                <div class="post-block">
+                  <link itemprop="mainEntityOfPage" href="https://e2541.github.io/e2541-.github.io-/2018/12/06/docker-install-redis/">
 
-              <time title="Post created: 2018-12-01 22:08:52" itemprop="dateCreated datePublished" datetime="2018-12-01T22:08:52+08:00">2018-12-01</time>
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
+                  <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+                    <meta itemprop="name" content="jming">
+                    <meta itemprop="description" content="我的博客">
+                    <meta itemprop="image" content="/e2541-.github.io-/images/avatar.gif">
+                  </span>
 
-          
+                  <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+                    <meta itemprop="name" content="my blog">
+                  </span>
 
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-       
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-
-
-          </div>
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">jming</p>
-              <p class="site-description motion-element" itemprop="description">我的博客</p>
-          </div>
-
-          
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/e2541-.github.io-/archives/">
-                
-                    <span class="site-state-item-count">2</span>
-                    <span class="site-state-item-name">Artikel</span>
-                  </a>
+
+                  <header class="post-header">
+
+
+
+                    <h1 class="post-title" itemprop="name headline">
+
+
+                      <a href="/e2541-.github.io-/2018/12/06/docker-install-redis/" class="post-title-link"
+                        itemprop="https://e2541.github.io/e2541-.github.io-/index.html">docker-install-redis</a>
+
+
+                    </h1>
+
+
+                    <div class="post-meta">
+                      <span class="post-time">
+
+
+
+
+
+
+                        <span class="post-meta-item-icon">
+                          <i class="fa fa-calendar-o"></i>
+                        </span>
+
+                        <span class="post-meta-item-text">Veröffentlicht am</span>
+
+
+
+
+
+
+                        <time title="Post created: 2018-12-06 22:48:35 / Updated at: 23:15:30" itemprop="dateCreated datePublished"
+                          datetime="2018-12-06T22:48:35+08:00">2018-12-06</time>
+
+
+
+
+
+
+
+                      </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                  </header>
+
+
+
+
+
+                  <div class="post-body" itemprop="articleBody">
+
+
+
+
+
+
+
+                    <h2 id="今天来讲一讲通过docker来安装redis"><a href="#今天来讲一讲通过docker来安装redis" class="headerlink" title="今天来讲一讲通过docker来安装redis"></a>今天来讲一讲通过docker来安装redis</h2>
+                    <ol>
+                      <li>通过docker search 查找DockerHub上的redis镜像<figure class="highlight shell">
+                          <table>
+                            <tr>
+                              <td class="gutter">
+                                <pre><span class="line">1</span><br></pre>
+                              </td>
+                              <td class="code">
+                                <pre><span class="line">docker search redis</span><br></pre>
+                              </td>
+                            </tr>
+                          </table>
+                        </figure>
+                      </li>
+                    </ol>
+                    <p><img src="../img/redis1.png" alt="redis1"><br>可以看到第一个就是我们想要的镜像</p>
+                    <ol start="2">
+                      <li>然后我们使用docker pull拉取此镜像</li>
+                    </ol>
+                    <figure class="highlight shell">
+                      <table>
+                        <tr>
+                          <td class="gutter">
+                            <pre><span class="line">1</span><br></pre>
+                          </td>
+                          <td class="code">
+                            <pre><span class="line">docker pull redis</span><br></pre>
+                          </td>
+                        </tr>
+                      </table>
+                    </figure>
+                    <p>通过docker pull redis 可以拉去Docker Hub上redis的最新版本,你也可以拉取指定版本的redis</p>
+                    <figure class="highlight shell">
+                      <table>
+                        <tr>
+                          <td class="gutter">
+                            <pre><span class="line">1</span><br></pre>
+                          </td>
+                          <td class="code">
+                            <pre><span class="line">docker pull redis:3.2</span><br></pre>
+                          </td>
+                        </tr>
+                      </table>
+                    </figure>
+                    <p><img src="../img/redis-pull.png" alt="redis-pull"></p>
+                    <ol start="3">
+                      <li>成功拉取镜像后，我们可以使用docker run 运行容器</li>
+                    </ol>
+                    <figure class="highlight shell">
+                      <table>
+                        <tr>
+                          <td class="gutter">
+                            <pre><span class="line">1</span><br></pre>
+                          </td>
+                          <td class="code">
+                            <pre><span class="line">docker run -p 6379:6379 -v /data:/data -d redis redis-server --appendonly yes</span><br></pre>
+                          </td>
+                        </tr>
+                      </table>
+                    </figure>
+                    <p>这行命令说明:</p>
+                    <blockquote>
+                      <ul>
+                        <li>p 6379:6379 : 将容器的6379端口映射到主机的6379端口</li>
+                        <li>-v /data:/data : 将主机中当前目录下的data挂载到容器的/data</li>
+                        <li>redis-server –appendonly yes : 在容器执行redis-server启动命令，并打开redis持久化配置</li>
+                      </ul>
+                    </blockquote>
+                    <ol start="4">
+                      <li>容器运行后，我们通过docker ps查看容器运行状况</li>
+                    </ol>
+                    <p><img src="../img/dockerps.png" alt="dockerps"></p>
+                    <ol start="5">
+                      <li>连接redis容器<br>使用redis镜像执行redis-cli命令连接到刚启动的容器,主机IP为127.0.0.1</li>
+                    </ol>
+                    <figure class="highlight shell">
+                      <table>
+                        <tr>
+                          <td class="gutter">
+                            <pre><span class="line">1</span><br></pre>
+                          </td>
+                          <td class="code">
+                            <pre><span class="line">docker exec -it 9a69c63b928c redis-cli</span><br></pre>
+                          </td>
+                        </tr>
+                      </table>
+                    </figure>
+                    <p><img src="../img/redis-run.png" alt="redis-run"></p>
+                    <p>就这样通过docker成功安装redis并运行</p>
+
+
+
+
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <footer class="post-footer">
+
+
+
+
+
+
+
+
+                    <div class="post-eof"></div>
+
+                  </footer>
                 </div>
-              
 
-              
 
-              
-            </nav>
-          
 
-          
+              </article>
 
-          
 
-          
 
-          
-          
 
-          
-            
-          
-          
+
+
+
+
+
+
+
+
+
+              <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+
+
+
+                <div class="post-block">
+                  <link itemprop="mainEntityOfPage" href="https://e2541.github.io/e2541-.github.io-/2018/12/02/test/">
+
+                  <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+                    <meta itemprop="name" content="jming">
+                    <meta itemprop="description" content="我的博客">
+                    <meta itemprop="image" content="/e2541-.github.io-/images/avatar.gif">
+                  </span>
+
+                  <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+                    <meta itemprop="name" content="my blog">
+                  </span>
+
+
+                  <header class="post-header">
+
+
+
+                    <h1 class="post-title" itemprop="name headline">
+
+
+                      <a href="/e2541-.github.io-/2018/12/02/test/" class="post-title-link" itemprop="https://e2541.github.io/e2541-.github.io-/index.html">test</a>
+
+
+                    </h1>
+
+
+                    <div class="post-meta">
+                      <span class="post-time">
+
+
+
+
+
+
+                        <span class="post-meta-item-icon">
+                          <i class="fa fa-calendar-o"></i>
+                        </span>
+
+                        <span class="post-meta-item-text">Veröffentlicht am</span>
+
+
+
+
+
+
+                        <time title="Post created: 2018-12-02 11:06:53 / Updated at: 11:07:09" itemprop="dateCreated datePublished"
+                          datetime="2018-12-02T11:06:53+08:00">2018-12-02</time>
+
+
+
+
+
+
+
+                      </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                  </header>
+
+
+
+
+
+                  <div class="post-body" itemprop="articleBody">
+
+
+
+
+
+
+
+                    <h1 id="这是一个测试"><a href="#这是一个测试" class="headerlink" title="这是一个测试"></a>这是一个测试</h1>
+
+
+
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <footer class="post-footer">
+
+
+
+
+
+
+
+
+                    <div class="post-eof"></div>
+
+                  </footer>
+                </div>
+
+
+
+              </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+
+
+
+                <div class="post-block">
+                  <link itemprop="mainEntityOfPage" href="https://e2541.github.io/e2541-.github.io-/2018/12/01/hello-world/">
+
+                  <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+                    <meta itemprop="name" content="jming">
+                    <meta itemprop="description" content="我的博客">
+                    <meta itemprop="image" content="/e2541-.github.io-/images/avatar.gif">
+                  </span>
+
+                  <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+                    <meta itemprop="name" content="my blog">
+                  </span>
+
+
+                  <header class="post-header">
+
+
+
+                    <h1 class="post-title" itemprop="name headline">
+
+
+                      <a href="/e2541-.github.io-/2018/12/01/hello-world/" class="post-title-link"
+                        itemprop="https://e2541.github.io/e2541-.github.io-/index.html">Hello World</a>
+
+
+                    </h1>
+
+
+                    <div class="post-meta">
+                      <span class="post-time">
+
+
+
+
+
+
+                        <span class="post-meta-item-icon">
+                          <i class="fa fa-calendar-o"></i>
+                        </span>
+
+                        <span class="post-meta-item-text">Veröffentlicht am</span>
+
+
+
+
+
+
+                        <time title="Post created: 2018-12-01 22:08:52" itemprop="dateCreated datePublished" datetime="2018-12-01T22:08:52+08:00">2018-12-01</time>
+
+
+
+                      </span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                  </header>
+
+
+
+
+
+                  <div class="post-body" itemprop="articleBody">
+
+
+
+
+
+
+
+                    <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very
+                      first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a>
+                      for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html"
+                        target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues"
+                        target="_blank" rel="noopener">GitHub</a>.</p>
+                    <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2>
+                    <h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create
+                      a new post</h3>
+                    <figure class="highlight bash">
+                      <table>
+                        <tr>
+                          <td class="gutter">
+                            <pre><span class="line">1</span><br></pre>
+                          </td>
+                          <td class="code">
+                            <pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre>
+                          </td>
+                        </tr>
+                      </table>
+                    </figure>
+                    <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+                    <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3>
+                    <figure class="highlight bash">
+                      <table>
+                        <tr>
+                          <td class="gutter">
+                            <pre><span class="line">1</span><br></pre>
+                          </td>
+                          <td class="code">
+                            <pre><span class="line">$ hexo server</span><br></pre>
+                          </td>
+                        </tr>
+                      </table>
+                    </figure>
+                    <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+                    <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate
+                      static files</h3>
+                    <figure class="highlight bash">
+                      <table>
+                        <tr>
+                          <td class="gutter">
+                            <pre><span class="line">1</span><br></pre>
+                          </td>
+                          <td class="code">
+                            <pre><span class="line">$ hexo generate</span><br></pre>
+                          </td>
+                        </tr>
+                      </table>
+                    </figure>
+                    <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+                    <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy
+                      to remote sites</h3>
+                    <figure class="highlight bash">
+                      <table>
+                        <tr>
+                          <td class="gutter">
+                            <pre><span class="line">1</span><br></pre>
+                          </td>
+                          <td class="code">
+                            <pre><span class="line">$ hexo deploy</span><br></pre>
+                          </td>
+                        </tr>
+                      </table>
+                    </figure>
+                    <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+
+
+
+                  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  <footer class="post-footer">
+
+
+
+
+
+
+
+
+                    <div class="post-eof"></div>
+
+                  </footer>
+                </div>
+
+
+
+              </article>
+
+
+
+            </section>
+
+
+
+
+          </div>
+
 
         </div>
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
 
 
-        
+
+        <div class="sidebar-toggle">
+          <div class="sidebar-toggle-line-wrap">
+            <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+            <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+            <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+          </div>
+        </div>
+
+        <aside id="sidebar" class="sidebar">
+
+          <div class="sidebar-inner">
+
+
+
+
+
+            <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+              <div class="site-overview">
+                <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+
+                  <p class="site-author-name" itemprop="name">jming</p>
+                  <p class="site-description motion-element" itemprop="description">我的博客</p>
+                </div>
+
+
+                <nav class="site-state motion-element">
+
+                  <div class="site-state-item site-state-posts">
+
+                    <a href="/e2541-.github.io-/archives/">
+
+                      <span class="site-state-item-count">3</span>
+                      <span class="site-state-item-name">Artikel</span>
+                    </a>
+                  </div>
+
+
+
+
+
+                </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              </div>
+            </section>
+
+
+
+
+
+          </div>
+        </aside>
+
+
+
       </div>
     </main>
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love" id="animate">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">jming</span>
-
-  
-
-  
-</div>
-
-
-  <div class="powered-by">Erstellt mit  <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v6.6.0</div>
+          <span class="with-love" id="animate">
+            <i class="fa fa-user"></i>
+          </span>
+          <span class="author" itemprop="copyrightHolder">jming</span>
 
 
 
 
-        
+        </div>
+
+
+        <div class="powered-by">Erstellt mit <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a>
+          v3.8.0</div>
+
+
+
+        <span class="post-meta-divider">|</span>
+
+
+
+        <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
+          v6.6.0</div>
 
 
 
@@ -709,33 +1032,36 @@
 
 
 
-        
+
+
+
+
+
+
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
 
-    
-	
-    
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
 
-    
+    </div>
+
+
+
+
+
+
+
   </div>
 
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
 
 
+  <script type="text/javascript">
+    if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+      window.Promise = null;
+    }
+  </script>
 
 
 
@@ -760,23 +1086,25 @@
 
 
 
-  
-  
-    <script type="text/javascript" src="/e2541-.github.io-/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/e2541-.github.io-/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/e2541-.github.io-/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
 
 
-  
+
+
+  <script type="text/javascript" src="/e2541-.github.io-/lib/jquery/index.js?v=2.1.3"></script>
+
+
+
+
+  <script type="text/javascript" src="/e2541-.github.io-/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+
+
+
+  <script type="text/javascript" src="/e2541-.github.io-/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+
+
 
 
   <script type="text/javascript" src="/e2541-.github.io-/js/src/utils.js?v=6.6.0"></script>
@@ -785,8 +1113,8 @@
 
 
 
-  
-  
+
+
 
 
   <script type="text/javascript" src="/e2541-.github.io-/js/src/affix.js?v=6.6.0"></script>
@@ -795,20 +1123,15 @@
 
 
 
-  
 
-  
+
+
 
 
   <script type="text/javascript" src="/e2541-.github.io-/js/src/bootstrap.js?v=6.6.0"></script>
 
 
 
-  
-
-
-
-  
 
 
 
@@ -819,36 +1142,42 @@
 
 
 
-  
 
 
 
 
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </body>
+
 </html>
